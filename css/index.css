@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Lora|Open+Sans|Dosis");
+
+:root {
+  --header-color: #dff3e3;
+  --footer-color: #dff3e3;
+  --index-pic-border: #ffd1ba;
+  --index-title-border: #4f5d75;
+  --last-update-color: #b497d6;
+
+  --heading-font: "Lora";
+  --paragraph-font: "Dosis";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font), serif;
+}
+p {
+  font-family: var(--paragraph-font), "Open Sans", sans-serif;
+}
+header {
+  background-color: var(--header-color);
+  border-radius: 25px;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.index-pic {
+  max-width: 200px;
+  box-shadow: 10px 16px var(--index-pic-border);
+  float: right;
+  margin-right: 3em;
+  border-radius: 25px;
+}
+
+.index-title {
+  border-bottom: 1px solid var(--index-title-border);
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+footer {
+  background-color: var(--footer-color);
+  border-radius: 25px;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.last-update {
+  color: var(--last-update-color);
+}
