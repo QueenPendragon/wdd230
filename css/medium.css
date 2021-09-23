@@ -1,0 +1,7 @@
+@media (min-width: 32.25em) {
+  .index-pic {
+    float: right;
+    box-shadow: 10px 16px var(--index-pic-border);
+    margin-right: 3em;
+  }
+}

@@ -24,21 +24,18 @@ p {
 }
 header {
   background-color: var(--header-color);
-  border-radius: 25px;
   text-align: center;
   padding: 2em 0;
 }
 
 .index-pic {
   max-width: 200px;
-  box-shadow: 10px 16px var(--index-pic-border);
-  float: right;
-  margin-right: 3em;
   border-radius: 25px;
 }
 
 .index-title {
   border-bottom: 1px solid var(--index-title-border);
+  margin-left: 0.5em;
 }
 
 .content {
@@ -47,9 +44,21 @@ header {
   padding: 50px 0;
 }
 
+.content ul {
+  list-style: none;
+}
+
+.content ul li {
+  padding: 0.25em 0;
+}
+
+.content ul li::before {
+  content: "💜";
+  margin-right: 0.25em;
+}
+
 footer {
   background-color: var(--footer-color);
-  border-radius: 25px;
   text-align: center;
   padding: 1em 0;
 }
