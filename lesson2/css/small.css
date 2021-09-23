@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Jose+Slab|Open+Sans|Quicksand");
+
+:root {
+  --header-color: #dff3e3;
+  --footer-color: #dff3e3;
+  --index-title-border: #4f5d75;
+  --last-update-color: #623a92;
+
+  --heading-font: "Jose Slab";
+  --paragraph-font: "Quicksand";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font), serif;
+}
+p {
+  font-family: var(--paragraph-font), "Open Sans", sans-serif;
+}
+header {
+  background-color: var(--header-color);
+  text-align: center;
+  padding: 2em 0;
+}
+
+main {
+  max-width: 767px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px;
+}
+
+main section {
+  margin: 0.5rem;
+  border: 0.1px solid #623a92;
+  padding: 0 1rem;
+  background-color: #eee;
+}
+
+footer {
+  background-color: var(--footer-color);
+  text-align: center;
+  padding: 1em 0;
+}
