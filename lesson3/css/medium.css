@@ -1,0 +1,10 @@
+@media only screen and (min-width: 760px) {
+  nav ul {
+    display: flex;
+    text-align: center;
+  }
+
+  nav ul li {
+    flex-basis: 25%;
+  }
+} /*end media query*/
