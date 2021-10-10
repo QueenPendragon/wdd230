@@ -9,8 +9,6 @@
   --paragraph-font: "Quicksand";
   --heading-font-color: #4a4238;
   --nav-font-color: #fff;
-  --nav-hover-font-color: #4a4238;
-  --nav-hover-background: #fddc86;
 }
 
 h1,
@@ -25,18 +23,42 @@ h6 {
 p {
   font-family: var(--paragraph-font), "Open Sans", sans-serif;
 }
+
 header {
   background-color: var(--header-color);
-  text-align: center;
   padding: 2em 0;
+  display: flex;
+  align-content: left;
+  justify-content: left;
+  max-width: 100%;
+}
+
+header img {
+  max-width: 80px;
+  height: auto;
+  margin-left: 2%;
+}
+
+header div {
+  font-size: 0.8rem;
+  padding-left: 2%;
+}
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: var(--nav-font-color);
 }
 
 nav {
   background-color: var(--top-nav-color);
   margin: 0;
+  font-family: var(--paragraph-font), serif;
 }
 
 nav ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -45,17 +67,26 @@ nav li {
   list-style-type: none;
 }
 
-nav a {
+nav ul li a {
   text-decoration: none;
   color: var(--nav-font-color);
   display: block;
   padding: 0.8rem 0;
   text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-nav a:hover {
-  background-color: var(--nav-hover-background);
-  color: var(--nav-hover-font-color);
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+nav ul li.active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav ul.hide {
+  display: none;
 }
 
 main {
@@ -63,8 +94,19 @@ main {
   display: block;
 }
 
+img {
+  max-width: 100%;
+}
+
 footer {
   background-color: var(--footer-color);
   text-align: center;
   padding: 1em 0;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }

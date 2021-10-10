@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta lang="eng" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="discription"
+      content="This is a mock weather site for WDD230."
+    />
+    <title>Weather Cat Walk| WDD 230 Lishelle Atwood</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Open+Sans&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="js/index.js"></script>
+  </head>
+
+  <body class="content">
+    <header>
+      <img
+        src="images/catwalklogo.png"
+        alt="Weather Cat Walk Logo"
+        class="logo"
+      />
+      <div>
+        <h1>Weather Cat Walk</h1>
+        <h2>Live Carefree Like A Cat</h2>
+      </div>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Preston</h1>
+      <img src="https://placeimg.com/640/480/nature" alt="Nature Picture" />
+      <h2>Article Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+        zzril delenit augue duis dolore te feugait nulla facilisi.
+      </p>
+      <img src="https://placeimg.com/640/480/nature" alt="Nature Picture" />
+      <h2>Contact Us</h2>
+    </main>
+  </body>
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> Lishelle Atwood |
+      <span id="currentDate"></span>
+    </p>
+  </footer>
+</html>
