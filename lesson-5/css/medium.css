@@ -1,0 +1,74 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+  /*---------- Message ----------*/
+
+  div#message {
+    font-size: 1.2rem;
+    border: 1px dashed #fff;
+    margin: 1rem 5rem;
+    box-shadow: 10px 5px 5px #4a4238;
+  }
+
+  /*---------- Header ----------*/
+
+  header img {
+    max-width: 100px;
+  }
+
+  /*---------- Main ----------*/
+
+  main {
+    max-width: 70rem;
+    margin: auto;
+  }
+
+  div.hero-parent {
+    position: relative;
+  }
+
+  div.hero-child {
+    position: absolute;
+    background-color: var(--hero-child-color);
+    border: 0.5px solid var(--border);
+    top: 10px;
+    left: 10px;
+    padding: 0 2%;
+  }
+
+  div.hero-child h4 {
+    border: 0.5px dashed var(--border);
+    padding: 0 2%;
+  }
+
+  h2.forecast {
+    display: block;
+  }
+
+  section.forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  section.forecast div {
+    text-align: center;
+    border: 0.5px solid var(--border);
+  }
+
+  section.forecast div h5 {
+    background-color: var(--forecast-color);
+    margin: 0;
+    padding: 1rem 0;
+    border-bottom: 1px dashed var(--border);
+  }
+
+  section.forecast div img {
+    margin-top: 1rem;
+  }
+
+  /*---------- Footer ----------*/
+
+  footer {
+    max-width: 70rem;
+    margin: auto;
+  }
+} /*end medium */
