@@ -68,6 +68,7 @@
   figure.article-img {
     width: 33%;
     float: right;
+    top: 0px;
   }
 
   figure.article-img img {
