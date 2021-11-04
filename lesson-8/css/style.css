@@ -1,0 +1,51 @@
+:root {
+  --dark-blue: #628ca6;
+  --light-blue: #7fb9c2;
+  --row-one: #e7f0ed;
+  --row-two: #e7ffed;
+  --border: rgb(168, 168, 168);
+}
+
+table {
+  border: 1px solid var(--border);
+  border-collapse: collapse;
+  font-family: Ubuntu, sans-serif;
+  box-shadow: 0 0 30px var(--dark-blue);
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 10px;
+  text-align: center;
+}
+
+table caption {
+  background-color: var(--light-blue);
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+tr:first-child th {
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+table tr:nth-child(odd) {
+  background: var(--row-one);
+}
+
+table tr:nth-child(even) {
+  background-color: var(--row-two);
+}
+
+table td#nov-sales {
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+table tfoot td {
+  background-color: var(--dark-blue);
+  font-size: 0.8rem;
+}

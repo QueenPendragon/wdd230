@@ -18,3 +18,8 @@
       } else {
             element.classList.add("hideme");
       }
+
+ if (!localStorage.pageLoadCount)
+    localStorage. = 0;
+  localStorage.pageLoadCount = parseInt(localStorage.pageLoadCount) + 1;
+  document.getElementById('count').textContent = localStorage.pageLoadCount;

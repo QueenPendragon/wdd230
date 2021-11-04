@@ -1,0 +1,20 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-container div {
+  background-color: cornflowerblue;
+  border: 1px solid grey;
+  padding: 30px;
+  font-family: 30px;
+}
+
+/*Responsive layout*/
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
