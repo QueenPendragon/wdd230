@@ -152,7 +152,7 @@
     font-size: 1rem;
   }
 
-  .range {
+  #severity {
     background: #fff;
     border: 0.5px solid var(--border);
     border-radius: 0.2rem;
@@ -160,7 +160,7 @@
     padding: 0.5rem;
   }
 
-  textarea.comments {
+  textarea#comments {
     width: 90%;
   }
 

@@ -62,35 +62,46 @@
       </ul>
     </nav>
     <main>
-      <form id="stormForm">
+      <form id="stormForm" method="get" action="thanks.html">
         <label for="name"
           >Full name:
           <br />
-          <input type="text" name="fullName" pattern="[a-zA-Z ]{5,}" required />
+          <input
+            type="text"
+            id="name"
+            name="fullName"
+            pattern="[a-zA-Z ]{5,}"
+            required
+          />
         </label>
         <br />
         <label for="email"
           >Email:
           <br />
-          <input type="email" name="email" placeholder="example@form.com" />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@form.com"
+          />
         </label>
         <br />
         <label for="phone"
           >Phone number:
           <br />
-          <input type="tel" name="phone" required />
+          <input type="tel" id="phone" name="phone" required />
         </label>
         <br />
         <label for="zip"
           >Zip code:
           <br />
-          <input type="number" name="zip" required />
+          <input type="number" id="zip" name="zip" required />
         </label>
         <br />
         <label for="storm"
           >Storm Type:
           <br />
-          <input list="sTypes" name="storm" />
+          <input list="sTypes" id="storm" name="storm" />
           <datalist id="sTypes">
             <option value="Flash Flood"></option>
             <option value="Hail"></option>
@@ -103,15 +114,14 @@
         <label for="severity"
           >Storm Severity (1-10):
           <br />
-          <div class="range">
-            <input type="range" name="severity" min="1" max="10" steps="1" />
-          </div>
+
+          <input type="range" id="severity" name="severity" min="1" max="10" />
         </label>
         <br />
-        <label for="region"
-          ><div class="region-label">Select Region:</div>
+        <label for="region">
+          Select Region:
           <br />
-          <select name="region">
+          <select name="region" id="region">
             <option value="" selected disabled>Select Region ...</option>
             <option value="preston">Preston</option>
             <option value="soda-springs">Soda Springs</option>
@@ -121,32 +131,49 @@
         <br />
         <p>Are you in danger?</p>
         <label for="yDanger">
-          <input type="radio" id="yDanger" name="danger" value="yes" />
+          <input
+            type="radio"
+            class="danger"
+            id="yDanger"
+            name="danger"
+            value="yes"
+          />
           Yes</label
         >
         <br />
         <label for="mDanger">
-          <input type="radio" id="mDanger" name="danger" value="maybe" />
+          <input
+            type="radio"
+            class="danger"
+            id="mDanger"
+            name="danger"
+            value="maybe"
+          />
           Maybe</label
         >
         <br />
         <label for="nDanger">
-          <input type="radio" id="nDanger" name="danger" value="no" />
+          <input
+            type="radio"
+            class="danger"
+            id="nDanger"
+            name="danger"
+            value="no"
+          />
           No</label
         >
         <br />
         <br />
-        <label for="comments">
-          <div class="comments-label">Additional information or comments:</div>
+        <label for="comments"
+          >Additional information or comments:
           <br />
           <textarea
-            class="comments"
+            id="comments"
             form="stormForm"
             placeholder="Enter text here..."
           ></textarea>
         </label>
         <br />
-
         <input name="submit" class="submit" type="submit" />
       </form>
     </main>

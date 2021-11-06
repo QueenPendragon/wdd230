@@ -231,6 +231,22 @@ form#stormForm input {
   margin: 0.2rem 0 0.5rem;
 }
 
+form#stormForm input.danger {
+  width: 10%;
+}
+
+/*---------- Thanks ----------*/
+
+div.thanks {
+  background-color: var(--message-color);
+  color: var(--nav-font-color);
+  padding: 1.5rem;
+  text-align: center;
+  text-shadow: 2px 2px var(--top-nav-color);
+  font-size: 1.5rem;
+  border: 1px dashed var(--border);
+}
+
 /*---------- Footer ----------*/
 
 footer {
@@ -246,18 +262,6 @@ textarea.comments {
 
 input.submit {
   width: 100%;
-}
-
-/*---------- Thanks ----------*/
-
-div.thanks {
-  background-color: var(--message-color);
-  color: var(--nav-font-color);
-  padding: 1.5rem;
-  text-align: center;
-  text-shadow: 2px 2px var(--top-nav-color);
-  font-size: 1.5rem;
-  border: 1px dashed var(--border);
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
