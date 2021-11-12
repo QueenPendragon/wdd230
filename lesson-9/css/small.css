@@ -6,8 +6,8 @@
   --top-nav-color: #b88603;
   --message-color: #623a9260;
 
-  --heading-font: "Josefin Slab";
-  --paragraph-font: "Quicksand";
+  --heading-font: "Lora";
+  --paragraph-font: "Dosis";
   --heading-font-color: #4a4238;
   --nav-font-color: #fff;
 
@@ -32,11 +32,12 @@ header {
   padding: 2em 0;
 }
 
-main {
+.cards {
   display: grid;
   grid-template-columns: 1fr;
   padding: 10px;
-  grid-gap: 10px;
+  gap: 10px;
+  text-align: center;
 }
 
 img {
