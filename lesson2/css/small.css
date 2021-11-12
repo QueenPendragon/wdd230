@@ -38,9 +38,8 @@ main figure {
   margin: 0;
 }
 
-main section {
+main div {
   border: 0.1px solid #623a92;
-  padding: 0 1rem;
   background-color: #eee;
 }
 
