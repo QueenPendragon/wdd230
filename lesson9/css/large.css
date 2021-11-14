@@ -39,6 +39,13 @@
     box-shadow: 0 0 50px rgb(99, 99, 99);
   }
 
+  /*---------- Cards ---------*/
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   /*---------- Thanks ----------*/
 
   div.thanks {

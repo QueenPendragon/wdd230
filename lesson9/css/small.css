@@ -6,6 +6,8 @@
   --top-nav-color: #b88603;
   --message-color: #623a9260;
 
+  --card-color: #dff3e3;
+
   --heading-font: "Josefin Slab";
   --paragraph-font: "Quicksand";
   --heading-font-color: #4a4238;
@@ -233,6 +235,21 @@ form#stormForm input {
 
 form#stormForm input.danger {
   width: 10%;
+}
+
+/*---------- Cards ---------*/
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px;
+  gap: 10px;
+  text-align: center;
+}
+
+.cards section {
+  background-color: var(--card-color);
+  border: 1px solid var(--border);
 }
 
 /*---------- Thanks ----------*/
