@@ -170,6 +170,12 @@
     float: right;
   }
 
+  /*---------- Current Events ---------*/
+  section.events {
+    max-width: 550px;
+    margin: 1rem auto;
+  }
+
   /*---------- Thanks ----------*/
 
   div.thanks {

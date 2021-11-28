@@ -27,7 +27,7 @@ if (dayNumber == 5) {
 
 //ADD the key and change units to imperial
 const apiURL =
-  "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=1158060aa6483d99cf7e9eeba387030d&units=imperial";
+  "//api.openweathermap.org/data/2.5/weather?id=5585000&appid=1158060aa6483d99cf7e9eeba387030d&units=imperial";
 
 //Go fetch it and then wait for a response.
 fetch(apiURL)
@@ -126,7 +126,7 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     // console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const town = jsonObject["towns"][2];
+    const town = jsonObject["towns"][1];
 
     let h2 = document.createElement("h2");
 
@@ -146,5 +146,9 @@ fetch(requestURL)
     let span3 = document.createElement("p");
     span3.textContent = town.events[2];
     div.appendChild(span3);
+
+    let span4 = document.createElement("p");
+    span4.textContent = town.events[3];
+    div.appendChild(span4);
     document.querySelector("section.events").appendChild(div);
   });

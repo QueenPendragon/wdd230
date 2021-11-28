@@ -252,6 +252,24 @@ form#stormForm input.danger {
   border: 1px solid var(--border);
 }
 
+/*---------- Current Events ---------*/
+section.events {
+  background-color: var(--card-color);
+  border: 1px solid var(--border);
+  padding: 10px;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+section.events h2 {
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+}
+
+section.events p {
+  font-family: var(--paragraph-font);
+}
+
 /*---------- Thanks ----------*/
 
 div.thanks {
