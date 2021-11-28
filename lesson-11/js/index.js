@@ -79,13 +79,13 @@ fetch(requestURL)
 
       document.querySelector("div.cards").appendChild(card);
 
-      let image = "images/preston.jpg";
+      let image = "images/";
 
-      //document.createElement("img");
+      let imageTag = document.createElement("img");
 
-      // image.setAttribute("src", towns[i].photo);
+      imageTag.setAttribute("src", image + towns[i].photo);
 
-      card.appendChild(image);
+      card.appendChild(imageTag);
 
       document.querySelector("div.cards").appendChild(card);
     }

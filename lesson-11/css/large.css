@@ -46,6 +46,10 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .cards section {
+    display: block;
+  }
+
   /*---------- Thanks ----------*/
 
   div.thanks {
