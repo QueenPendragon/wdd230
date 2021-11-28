@@ -1,0 +1,198 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+  /*---------- Message ----------*/
+
+  div#message {
+    font-size: 1.2rem;
+    border: 1px dashed #fff;
+    margin: 1rem 5rem;
+    box-shadow: 10px 5px 5px #4a4238;
+  }
+
+  /*---------- Header ----------*/
+
+  header img {
+    max-width: 100px;
+  }
+
+  /*---------- Main ----------*/
+
+  main {
+    max-width: 70rem;
+    margin: auto;
+  }
+
+  div.hero-parent {
+    position: relative;
+  }
+
+  div.hero-child {
+    position: absolute;
+    background-color: var(--hero-child-color);
+    border: 0.5px solid var(--border);
+    top: 10px;
+    left: 10px;
+    padding: 0 2%;
+  }
+
+  div.hero-child h4 {
+    border: 0.5px dashed var(--border);
+    padding: 0 2%;
+  }
+
+  h2.forecast {
+    display: block;
+  }
+
+  section.forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  section.forecast div {
+    text-align: center;
+    border: 0.5px solid var(--border);
+  }
+
+  section.forecast div h5 {
+    background-color: var(--forecast-color);
+    margin: 0;
+    padding: 1rem 0;
+    border-bottom: 1px dashed var(--border);
+  }
+
+  section.forecast div img {
+    margin-top: 1rem;
+  }
+
+  /*article*/
+  .article-title {
+    margin-top: 2rem;
+  }
+  .article-wrapper {
+    display: flex;
+  }
+
+  .article-wrapper p {
+    max-width: 67%;
+  }
+
+  .article-img {
+    max-width: 33%;
+    padding-left: 1rem;
+  }
+
+  /*Contact us*/
+  section.contact-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    justify-content: left;
+  }
+
+  section.contact-us h2 {
+    grid-column: 1 / 4;
+  }
+
+  section.address {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+
+  section.phone {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  section.email {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  div.map-wrapper {
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+
+  iframe.contact-map {
+    width: 100%;
+  }
+
+  /*---------- Gallery ---------*/
+  div.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  div.gallery figure {
+    border: 0.8px solid var(--border);
+    box-shadow: 3px 3px 5px 6px #ccc;
+  }
+
+  /*---------- Form ----------*/
+
+  form#stormForm {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 0.8px solid var(--border);
+    padding: 1rem;
+    background-color: var(--message-color);
+    border-radius: 0.5rem;
+    font-family: var(--paragraph-font);
+    box-shadow: 10px 5px 5px #4a4238;
+  }
+
+  form#stormForm input {
+    width: 90%;
+    border: 0.5px solid var(--border);
+    border-radius: 0.2rem;
+  }
+
+  form#stormForm label {
+    font-size: 1rem;
+  }
+
+  #severity {
+    background: #fff;
+    border: 0.5px solid var(--border);
+    border-radius: 0.2rem;
+    width: 90%;
+    padding: 0.5rem;
+  }
+
+  textarea#comments {
+    width: 90%;
+  }
+
+  /*---------- Cards ---------*/
+
+  .cards section img {
+    float: right;
+  }
+
+  /*---------- Thanks ----------*/
+
+  div.thanks {
+    margin: 10rem 6rem;
+    box-shadow: 10px 5px 5px #4a4238;
+  }
+
+  /*---------- Wireframe ---------*/
+
+  .wireframe-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .wireframe {
+    max-width: 100%;
+  }
+
+  /*---------- Footer ----------*/
+
+  footer {
+    max-width: 70rem;
+    margin: auto;
+  }
+} /*end medium */
