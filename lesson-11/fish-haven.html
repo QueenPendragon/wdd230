@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="discription"
+      content="Get the local weather update for Preston, Idaho."
+    />
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <title>Weather Cat Walk | Fish Haven</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Open+Sans&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="js/index.js"></script>
+    <script defer src="js/fish-haven.js"></script>
+    <script
+      defer
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+    ></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Josefin Slab", "Open Sans", "Quicksand"] },
+      });
+    </script>
+    <script defer src="js/windchill.js"></script>
+  </head>
+
+  <body class="content">
+    <div id="message" class="">
+      🥞Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+      park pavilion.🥞
+    </div>
+    <header>
+      <img
+        src="images/catwalklogo.png"
+        alt="Weather Cat Walk Logo"
+        class="logo"
+      />
+      <div>
+        <h1>Weather Cat Walk</h1>
+        <h2>Live Carefree Like A Cat</h2>
+      </div>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="soda-springs.html">Soda Springs</a></li>
+        <li><a href="fish-haven.html" class="active">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Fish Haven</h1>
+      <span>Weather taken from: </span>
+      <span id="place"></span>
+      <div class="hero-parent">
+        <picture>
+          <source media="(max-width: 518px)" srcset="images/fishhaven518.jpeg" />
+          <source media="(max-width: 963px)" srcset="images/fishhaven963.jpeg" />
+          <img src="images/fishhaven1120.jpeg" alt="Preston Idaho" />
+        </picture>
+        <div class="hero-child">
+          <h4>Current Weather</h4>
+          <ul>
+            <li class="label">Currently:</li>
+            <li><span id="currentCondition"></span></li>
+            <li class="label">Current Temp:</li>
+            <li><span id="currentTemp"></span>&deg;F</li>
+            <li class="label">Wind Chill:</li>
+            <li><span id="windChill"></span>&deg;F</li>
+            <li class="label">Humidity:</li>
+            <li><span id="currentHumidity"></span>%</li>
+            <li class="label">Wind Speed:</li>
+            <li><span id="windSpeed"></span> MPH</li>
+          </ul>
+        </div>
+      </div>
+      <h2 class="forecast">Five Day Forecast</h2>
+      <section class="forecast" id="weatherforecast"></section>
+
+      <section class="events" id="current-events"></section>
+
+      <h2 class="article-title">Article Title</h2>
+      <div class="article-wrapper">
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+          molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+          vero eros et accumsan et iusto odio dignissim qui blandit praesent
+          luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+          molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+          vero eros et accumsan et iusto odio dignissim qui blandit praesent
+          luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </p>
+
+        <div class="article-img">
+          <img src="https://placeimg.com/640/480/nature" alt="Nature Picture" />
+        </div>
+      </div>
+      <section class="contact-us">
+        <h2>Contact Us</h2>
+        <section class="address">
+          <h3>Address:</h3>
+          <p>
+            The Weather Center<br />
+            123 Main Street.<br />
+            Franklin, MI 87654
+          </p>
+        </section>
+        <section class="phone">
+          <h3>Phone:</h3>
+          <p>(000) 867-5309</p>
+        </section>
+        <section class="email">
+          <h3>Email:</h3>
+          <p>info@weathercatwalk.com</p>
+        </section>
+        <div class="map-wrapper">
+          <iframe
+            class="contact-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11852.958830505177!2d-111.40486806217935!3d42.03803991735526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20ID%2083287!5e0!3m2!1sen!2sus!4v1638064706700!5m2!1sen!2sus"
+            width="400"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> Lishelle Atwood |
+        <span id="currentDate"></span> |
+        <span
+          >Weather data via:
+          <a href="https://openweathermap.org/">OpenWeatherMap</a></span
+        >
+      </p>
+    </footer>
+  </body>
+</html>
