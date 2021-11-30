@@ -120,6 +120,9 @@ fetch(fiveDayapiURL)
     }
   }); //end of "then" fat arrow function
 
+//Current Events
+const requestURL = "json/index.json";
+
 fetch(requestURL)
   .then(function (response) {
     return response.json();
