@@ -1,0 +1,42 @@
+@media only screen and (min-width: 1024px) {
+  nav button {
+    display: none;
+  }
+
+  nav ul.hide {
+    display: block;
+  }
+
+  nav ul {
+    margin-left: 2%;
+  }
+
+  nav ul li {
+    float: left;
+  }
+
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.6rem 1rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #join-page-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #join-form,
+  #member-key {
+    max-width: 100%;
+  }
+  /*----------Contact ----------*/
+  #contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

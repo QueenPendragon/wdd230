@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="discription" content="Mesa Arizona's Chamber of Commerce" />
+    <link rel="shortcut icon" href="!" />
+    <title>Mesa's Round Table</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="js/index.js"></script>
+    <script
+      defer
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+    ></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Josefin Slab", "Open Sans", "Quicksand"] },
+      });
+    </script>
+  </head>
+
+  <body class="content">
+    <header>
+      <img src="images/logo.png" alt="Mesa's Round Table Logo" class="logo" />
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Mesa</a></li>
+        <li><a class="active" href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2 class="page-title">Join</h2>
+      <div id="join-page-content">
+        <form id="join-form" class="form" method="get" action="thanks.html">
+          <label for="firstName"
+            >First name:
+            <br />
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              pattern="[a-zA-Z ]{2,}"
+              required
+            />
+          </label>
+          <br />
+          <label for="lastName"
+            >First name:
+            <br />
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              pattern="[a-zA-Z ]{2,}"
+              required
+            />
+          </label>
+          <br />
+          <label for="title"
+            >Title:
+            <br />
+            <input
+              type="text"
+              id="title"
+              name="title"
+              pattern="[a-zA-Z ]{2,}"
+            />
+          </label>
+          <br />
+          <label for="email"
+            >Email:
+            <br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@form.com"
+              required
+            />
+          </label>
+          <br />
+          <label for="phone"
+            >Phone number:
+            <br />
+            <input type="tel" id="phone" name="phone" />
+          </label>
+          <br />
+          <label for="busName"
+            >Business Name:
+            <br />
+            <input
+              type="text"
+              id="busName"
+              name="busName"
+              placeholder="Business"
+              required
+            />
+          </label>
+          <br />
+          <label for="busAddress"
+            >Business address:
+            <br />
+            <input type="text" id="busAddress" name="busAddress" />
+          </label>
+          <br />
+          <label for="busWebsite"
+            >Business website:
+            <br />
+            <input type="text" id="busWebsite" name="busWebsite" />
+          </label>
+          <br />
+          <label for="busDiscription"
+            >Business Discription:
+            <br />
+            <textarea
+              id="busDiscription"
+              form="join-form"
+              placeholder="Enter text here..."
+            ></textarea>
+          </label>
+          <br />
+          <p>Membership level:</p>
+          <label for="membership">
+            <input
+              type="radio"
+              class="membership"
+              id="non-profit"
+              name="membership"
+              value="non-profit"
+            />
+            Non-profit ($100)</label
+          >
+          <br />
+          <label for="membership">
+            <input
+              type="radio"
+              class="membership"
+              id="bronze"
+              name="membership"
+              value="bronze"
+            />
+            Bronze ($200)</label
+          >
+          <br />
+          <label for="membership">
+            <input
+              type="radio"
+              class="membership"
+              id="silver"
+              name="membership"
+              value="silver"
+            />
+            Silver ($400)</label
+          >
+          <br />
+          <br />
+          <label for="membership">
+            <input
+              type="radio"
+              class="membership"
+              id="gold"
+              name="membership"
+              value="gold"
+            />
+            Gold ($1000)</label
+          >
+          <br />
+          <br />
+          <label for="comments"
+            >Additional information or comments:
+            <br />
+            <textarea
+              id="comments"
+              form="stormForm"
+              placeholder="Enter text here..."
+            ></textarea>
+          </label>
+          <br />
+          <input name="submit" class="submit" type="submit" />
+        </form>
+
+        <div id="member-key" class="article-wrapper">
+          <h2 class="article-title">Membership Key</h2>
+          <div>
+            <h4>Non-profit:</h4>
+            <ul>
+              <li>1-hour business training each quarter</li>
+              <li>3 social media post a year</li>
+              <li>tier directory listing</li>
+            </ul>
+
+            <h4>Bronze:</h4>
+            <ul>
+              <li>3-hour business training each quarter</li>
+              <li>3 social media post a year</li>
+              <li>C tier directory listing</li>
+            </ul>
+
+            <h4>Silver:</h4>
+            <ul>
+              <li>Half day business training each quarter</li>
+              <li>1 social media post a month</li>
+              <li>B tier directory listing</li>
+            </ul>
+
+            <h4>Gold:</h4>
+            <ul>
+              <li>Full day business training each quarter</li>
+              <li>3 social media posts a month</li>
+              <li>A tier directory listing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> Lishelle Atwood |
+        <span id="currentDate"></span>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+{"directory": [
+    {
+        "name": "Harkins Theatre SS25" ,
+        "photo": "images/harkins-card.jpg",
+        "link": "https://www.harkins.com/locations/superstition-springs-25",
+        "address": "6950 E. Superstition Springs Blvd. Mesa, AZ 85209",
+        "phone": "480-641-4603"
+    },
+     {
+        "name": "Crumbl Cookies Signal Butte",
+        "photo": "images/crumbl-card.jpg",
+        "link": "https://crumblcookies.com/signalbutte",
+        "address": "1804 S. Signal Butte Rd, Suite 103, Mesa, Arizona 85209",
+        "phone": "(602) 661 2799"
+    },
+     {
+        "name": "Filiberto's",
+        "photo": "images/filibertos-card.jpg",
+        "link": "https://filibertos.com/",
+        "address": "1839 S Crismon Rd, Mesa, AZ 85209",
+        "phone": "(480) 809-6207"
+    },
+     {
+        "name": "Yogis Grill",
+        "photo": "images/yogis-card.jpg",
+        "link": "http://www.yogisgrill.com/",
+        "address": "2043 S Ellsworth Rd #104, Mesa, AZ 85209",
+        "phone": "(480) 380-1213"
+    },
+     {
+        "name": "Scratch Pub & Grill",
+        "photo": "images/scratch-card.jpg",
+        "link": "http://scratchpubgrill.com/",
+        "address": "2401 S Lansing Ste 3, Mesa, AZ 85209",
+        "phone": "(480) 354-1234"
+    },
+     {
+        "name": "Papa Murphy's",
+        "photo": "images/papa-card.jpg",
+        "link": "https://locations.papamurphys.com/az/mesa/8257-e-guadalupe-rd.?utm_source=organic&utm_medium=bing&utm_campaign=yext",
+        "address": "8257 E Guadalupe Rd., Ste 101, Mesa, AZ 85212",
+        "phone": "(480) 986-1981"
+    },
+     {
+        "name": "Boca Taqueria",
+        "photo": "images/boca-card.jpg",
+        "link": "https://www.bocataqueria.com/",
+        "address": "10706 E Point Twenty Two Blvd, Mesa, AZ 85212",
+        "phone": "(480) 659-8790"
+    }
+]
+}
